@@ -1,17 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDom from 'react-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//Import CSS
+import './index.css'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function BookList() {
+  return (
+    <section className="booklist">
+      <Book/>
+      <Book/>
+      <Book/>
+    </section>
+  )
+}
+
+function Book() {
+  return (
+    <article className="book">
+      <Image/>
+      <Title/>
+      <Author/>
+    </article>
+  )
+}
+
+function Image() {
+  return (
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51BqNmSO6uL._SX404_BO1,204,203,200_.jpg"></img>
+  )
+}
+
+function Title() {
+  return (
+    <h3>Full-Stack React Projects: Learn MERN stack development by building modern web apps using MongoDB, Express, React, and Node.js, 2nd Edition</h3>
+  )
+}
+
+function Author() {
+  return (
+    <h4>Shama Hoque</h4>
+  )
+}
+ 
+
+
+ReactDom.render(<BookList />, document.getElementById('root'))
+
+
+
