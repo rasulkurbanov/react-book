@@ -8,8 +8,6 @@ function BookList() {
   return (
     <section className="booklist">
       <Book/>
-      <Book/>
-      <Book/>
     </section>
   )
 }
@@ -32,7 +30,9 @@ function Image() {
 
 function Title() {
   return (
-    <h3>Full-Stack React Projects: Learn MERN stack development by building modern web apps using MongoDB, Express, React, and Node.js, 2nd Edition</h3>
+    <h3>Full-Stack React Projects: Learn MERN 
+    stack development by building modern web apps
+    using MongoDB, Express, React, and Node.js, 2nd Edition</h3>
   )
 }
 
