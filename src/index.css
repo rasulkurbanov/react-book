@@ -29,3 +29,7 @@ body {
   width: 15vw;
   display: inline-block;
 }
+
+.book h3 {
+  color: aqua;
+}
